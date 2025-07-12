@@ -40,8 +40,7 @@ CREATE TABLE {keyspace}.{table} (
 CREATE_KEYSPACE = """
 CREATE KEYSPACE {keyspace}
 WITH REPLICATION = {replication}
-AND DURABLE_WRITES = {durable_writes}
-AND TABLETS = {{'enabled': false}};
+AND DURABLE_WRITES = {durable_writes};
 """
 
 DROP_KEYSPACE = """
